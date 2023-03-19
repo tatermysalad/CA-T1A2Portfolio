@@ -1,9 +1,8 @@
 @import "../components/index";
-
+// main styling
 body {
-    background-color: $background-color;
     section {
-        margin-top: 100px;
+        margin-top: 20vh;
         display: flex;
         flex-direction: column;
         height: 60vh;
@@ -37,7 +36,7 @@ body {
         }
     }
 }
-
+// Changes the headings for specific words to show user they are links
 .about-me-sub {
     font-family: $heading;
     font-size: 1.55rem;
@@ -47,4 +46,8 @@ body {
         text-shadow: 2px 2px black;
         color: white;
     }
+}
+// hides logo for mobile view
+.logo {
+    display: none;
 }

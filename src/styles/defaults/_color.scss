@@ -1,4 +1,8 @@
-$background-color: #D8A7B1;
-$header: #B6E2D3;
-$blog-background: #FAE8E0;
-$extra-color: #EF7C8E;
+$background-color: #d8a7b1;
+$header: #b6e2d3;
+$blog-background: #fae8e0;
+$extra-color: #ef7c8e;
+
+body {
+    background-color: $background-color;
+}

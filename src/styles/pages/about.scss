@@ -1,0 +1,40 @@
+@import "../components/index";
+// Changes the font in the menu overlay for the current page
+#about {
+    font-family: $heading;
+}
+// hides the logo for mobile view
+.logo {
+    display: none;
+}
+// Main styling
+main {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    justify-content: space-between;
+    margin: 20vh 25px;
+    .about {
+        font-family: $heading;
+        font-size: 40px;
+        position: absolute;
+        left: 35px;
+        top: 30px;
+    }
+    section,
+    .resume {
+        font-family: $text;
+        font-size: 0.9rem;
+    }
+    .resume {
+        text-decoration: none;
+        padding: 5px;
+        width: auto;
+        background-color: black;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+}

@@ -36,14 +36,13 @@
             }
         }
     }
-    .logo {
-        display: none;
-    }
+ 
     .contact {
         margin-bottom: 3vh;
     }
 }
-
+// menu button creation
+// position box, then create the inner lines with flexbox
 .menu-button {
     position: absolute;
     right: 35px;
