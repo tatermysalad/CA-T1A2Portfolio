@@ -48,33 +48,44 @@
     </head>
     <body>
         <header class="menu">
-            <a href class="">
                 <input id="menu-toggle" type="checkbox" />
                 <label class="menu-button" for="menu-toggle">
                     <div class="menu-button-line menu-button-top-line"></div>
                     <div class="menu-button-line menu-button-middle-line"></div>
                     <div class="menu-button-line menu-button-bottom-line"></div>
                 </label>
-                <nav class="navigation-bar">
-                    <a href="/src/index.html" class="logo">ED</a>
-                    <a href="/src/pages/about.html">About</a>
-                    <a href="/src/pages/blog.html">Blog</a>
-                    <a href="/src/pages/contact.html">Contact</a>
-                </nav>
-            </a>
+                <nav class="navigation-menu">
+                        <div class="nav-item-list">
+                            <a href="/src/index.html" class="logo nav-item">ED</a>
+                            <a href="/src/pages/about.html" class="nav-item">About</a>
+                            <a href="/src/pages/blog.html" class="nav-item">Blog</a>
+                            <a href="/src/pages/contact.html" class="nav-item contact">Contact</a>
+                            <div class="social-media">
+                <a href="https://github.com" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://linkedin.com" target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://instagram.com" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                        </div>
+                    </nav>
         </header>
         <main>
             <section>
                 <div class="welcome">
-                    Hi! I’m Ed<span class="full-name">ward Dougherty</span>. A
+                    Hi! I’m <a href="./pages/about.html" class="about-me-sub">Ed<span class="full-name">ward Dougherty</span></a>.<br> A
                     full-stack web dev
                     <span class="welcome-sub">in the making</span>
                 </div>
+                <img src="./img/My-image.jpg" alt="image of the creator">
                 <div class="about-me">
-                    I value <span class="about-me-sub">simplicity</span>;
+                    I value <a href="./pages/about.html" class="about-me-sub">simplicity</a>;
                     focusing on clean
-                    <span class="about-me-sub">design</span> and
-                    <span class="about-me-sub">function</span>.
+                    <a href="./pages/blog.html" class="about-me-sub">design</a> and
+                    <a href="./pages/contact.html" class="about-me-sub">function</a>.
                 </div>
             </section>
         </main>
