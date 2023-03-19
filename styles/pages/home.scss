@@ -1,0 +1,13 @@
+@import "../components/index";
+
+body {
+    background-color: $background-color;
+    section {
+        .welcome {
+            font-family: "Abril Fatface", cursive;
+            .full-name {
+                display: none;
+            }
+        }
+    }
+}
