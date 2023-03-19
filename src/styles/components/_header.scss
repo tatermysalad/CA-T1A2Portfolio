@@ -53,7 +53,9 @@
                 margin-bottom: 19px;
             }
             & + .navigation-bar {
-                // transform: scale(1);
+                a {
+                    text-align: center;
+                }
             }
         }
     }
