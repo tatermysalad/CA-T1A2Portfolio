@@ -187,12 +187,12 @@ body main form .btn-div #submit:hover {
   background-color: #ef7c8e;
 }
 body footer {
-  margin-top: 15vh;
+  margin-top: 16vh;
+  margin-bottom: 2vh;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-}
-body footer h4 {
-  margin-left: 35px;
 }
 body footer .social-media {
   display: flex;

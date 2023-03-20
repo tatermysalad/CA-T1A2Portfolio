@@ -87,12 +87,15 @@ body {
         }
     }
     footer {
-        margin-top: 15vh;
+        margin-top: 16vh;
+        margin-bottom: 2vh;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         flex-direction: column;
-        h4 {
-            margin-left: 35px;
-        }
+        // div {
+        //     margin-left: 35px;
+        // }
         .social-media {
             display: flex;
             justify-content: center;
