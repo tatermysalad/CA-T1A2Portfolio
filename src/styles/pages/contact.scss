@@ -13,6 +13,9 @@
 // Main styling
 body {
     font-family: $text;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
     header {
         // Changes the font in the menu overlay for the current page
         #contact {
@@ -37,11 +40,11 @@ body {
             align-items: center;
             height: 100%;
             width: 100%;
-            margin-top: 20vh;
             .form-elements {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 10px;
+                animation: fade-up 0.5s;
                 label {
                     font-size: 1.2rem;
                 }
@@ -80,6 +83,23 @@ body {
                         // opacity: .0;
                     }
                 }
+            }
+        }
+    }
+    footer {
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 3em;
             }
         }
     }

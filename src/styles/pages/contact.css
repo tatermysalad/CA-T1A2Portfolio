@@ -119,6 +119,9 @@ footer .social-media {
 }
 body {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
 }
 body header #contact {
   font-family: "Abril Fatface", cursive;
@@ -139,12 +142,12 @@ body main form {
   align-items: center;
   height: 100%;
   width: 100%;
-  margin-top: 20vh;
 }
 body main form .form-elements {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  animation: fade-up 0.5s;
 }
 body main form .form-elements label {
   font-size: 1.2rem;
@@ -182,6 +185,22 @@ body main form .btn-div #submit {
 body main form .btn-div #submit:hover {
   cursor: pointer;
   background-color: #ef7c8e;
+}
+body footer {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+body footer .social-media a {
+  text-decoration: none;
+  color: black;
+  font-size: 3em;
 }
 
 @media screen and (min-width: 834px) {
