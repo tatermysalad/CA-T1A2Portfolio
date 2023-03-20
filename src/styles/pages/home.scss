@@ -1,4 +1,8 @@
 @import "../components/index";
+// hides logo for mobile view
+.logo {
+    display: none;
+}
 // main styling
 body {
     section {
@@ -26,28 +30,16 @@ body {
             font-size: 1.4rem;
             // padding-top: 20vh;
         }
-        img {
-            position: absolute;
-            width: 20vw;
-            border-radius: 50%;
-            top: 5vh;
-            left: 5vw;
-            z-index: 0;
+        // Changes the headings for specific words to show user they are links
+        .about-me-sub {
+            font-family: $heading;
+            font-size: 1.55rem;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                text-shadow: 2px 2px black;
+                color: white;
+            }
         }
     }
-}
-// Changes the headings for specific words to show user they are links
-.about-me-sub {
-    font-family: $heading;
-    font-size: 1.55rem;
-    text-decoration: none;
-    color: black;
-    &:hover {
-        text-shadow: 2px 2px black;
-        color: white;
-    }
-}
-// hides logo for mobile view
-.logo {
-    display: none;
 }

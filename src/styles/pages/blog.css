@@ -100,42 +100,65 @@ footer .social-media {
   display: none;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 50vh;
-  margin-top: 20vh;
-  margin-left: 35px;
-  margin-right: 35px;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
-  gap: 5vw;
+.section:nth-child(1) {
+  grid-area: one;
 }
-body header .about {
+.section:nth-child(2) {
+  grid-area: two;
+}
+.section:nth-child(3) {
+  grid-area: three;
+}
+.section:nth-child(4) {
+  grid-area: four;
+}
+.section:nth-child(5) {
+  grid-area: five;
+}
+
+body header #blog {
+  font-family: "Abril Fatface", cursive;
+}
+body header .logo {
+  display: none;
+}
+body .page-title {
   font-family: "Abril Fatface", cursive;
   font-size: 40px;
   position: absolute;
   left: 35px;
   top: -5px;
 }
-body header #about {
-  font-family: "Abril Fatface", cursive;
+body main {
+  margin: 25vh 25px;
 }
-body header .logo {
-  display: none;
+body main .blog-parent {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "one" "two" "three" "four" "five";
 }
-body main .item {
-  margin-bottom: 10px;
-}
-body footer .resume {
-  background-color: black;
-  height: 10px;
-  width: 10px;
-  text-decoration: none;
-  color: white;
+body main .blog-parent .blog-child {
+  background-color: #fae8e0;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
   padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-}/*# sourceMappingURL=about.css.map */
+  overflow: hidden;
+}
+body main .blog-parent .blog-child img {
+  width: 40%;
+  border-radius: 5px;
+  float: left;
+  margin: 5px;
+}
+body main .blog-parent .blog-child:nth-child(2n) > img {
+  float: right;
+}
+body main .blog-parent .blog-child .blog-item-header {
+  font-family: "Abril Fatface", cursive;
+  margin: 1vh 0;
+}
+body main .blog-parent .blog-child .published-date {
+  margin: 0 0.1vw;
+  text-align: right;
+}/*# sourceMappingURL=blog.css.map */

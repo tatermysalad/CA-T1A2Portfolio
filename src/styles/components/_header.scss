@@ -1,93 +1,102 @@
 // defines the color and ordering of the small/mobile view menu overlay
-.navigation-menu {
-    background-color: $header;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 100vw;
-    transition: 0.3s ease-in-out;
-    z-index: 1;
-    .nav-item-list {
+header {
+    img {
+        position: absolute;
+        width: 20vw;
+        border-radius: 50%;
+        top: 5vh;
+        left: 5vw;
+        z-index: 0;
+    }
+    // menu button creation
+    // position box, then create the inner lines with flexbox
+    .menu-button {
+        position: absolute;
+        right: 35px;
+        top: 35px;
+        background-color: $header;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 80vh;
-        gap: 25px;
-        .nav-item {
-            text-decoration: none;
-            font-family: $text;
-            font-size: 30px;
-            color: black;
-            margin-left: 15vw;
-            &:hover {
-                text-decoration: underline;
+        align-items: center;
+        gap: 5px;
+        z-index: 2;
+        overflow: hidden;
+        .menu-button-line {
+            width: 30px;
+            height: 4px;
+            background-color: black;
+            transition: 0.2s;
+        }
+    }
+    // Animations, on toggle of the menu box which is acting as the checkbox
+    // The menu buttons transform to form an X
+    // The navigation menu slides in from the right
+    #menu-toggle {
+        display: none;
+        &:checked {
+            & + .menu-button {
+                gap: 0px;
+                background-color: $background-color;
+                .menu-button-top-line {
+                    transform: rotate(45deg) scale(1.3, 8);
+                    margin-top: 20px;
+                }
+                .menu-button-middle-line {
+                    opacity: 0;
+                }
+                .menu-button-bottom-line {
+                    transform: rotate(-45deg) scale(1.3, 8);
+                    margin-bottom: 19px;
+                }
+                & + .navigation-menu {
+                    transform: translateX(-100vw);
+                }
             }
         }
-        .social-media {
-            position: absolute;
-            top: 80vh;
-            left: 15vw;
-            a {
-                color: black;
+    }
+    .navigation-menu {
+        background-color: $header;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100vw;
+        transition: 0.3s ease-in-out;
+        z-index: 1;
+        .nav-item-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 80vh;
+            gap: 25px;
+            .nav-item {
                 text-decoration: none;
-                font-size: 2rem;
-                padding-right: 15px;
+                font-family: $text;
+                font-size: 30px;
+                color: black;
+                margin-left: 15vw;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .social-media {
+                position: absolute;
+                top: 80vh;
+                left: 15vw;
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 2rem;
+                    padding-right: 15px;
+                }
             }
         }
-    }
- 
-    .contact {
-        margin-bottom: 3vh;
-    }
-}
-// menu button creation
-// position box, then create the inner lines with flexbox
-.menu-button {
-    position: absolute;
-    right: 35px;
-    top: 35px;
-    background-color: $header;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    z-index: 2;
-    overflow: hidden;
-    .menu-button-line {
-        width: 30px;
-        height: 4px;
-        background-color: black;
-        transition: 0.2s;
-    }
-}
-// Animations, on toggle of the menu box which is acting as the checkbox
-// The menu buttons transform to form an X
-// The navigation menu slides in from the right
-#menu-toggle {
-    display: none;
-    &:checked {
-        & + .menu-button {
-            gap: 0px;
-            background-color: $background-color;
-            .menu-button-top-line {
-                transform: rotate(45deg) scale(1.3, 8);
-                margin-top: 20px;
-            }
-            .menu-button-middle-line {
-                opacity: 0;
-            }
-            .menu-button-bottom-line {
-                transform: rotate(-45deg) scale(1.3, 8);
-                margin-bottom: 19px;
-            }
-            & + .navigation-menu {
-                transform: translateX(-100vw);
-            }
+        .contact {
+            margin-bottom: 3vh;
         }
     }
 }
