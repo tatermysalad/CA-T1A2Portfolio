@@ -1,25 +1,8 @@
 @import "../components/index";
 
-.section {
-    &:nth-child(1) {
-        grid-area: one;
-    }
-    &:nth-child(2) {
-        grid-area: two;
-    }
-    &:nth-child(3) {
-        grid-area: three;
-    }
-    &:nth-child(4) {
-        grid-area: four;
-    }
-    &:nth-child(5) {
-        grid-area: five;
-    }
-}
-
 // Main styling
 body {
+    font-family: $text;
     header {
         // Changes the font in the menu overlay for the current page
         #blog {
@@ -38,10 +21,10 @@ body {
         top: -5px;
     }
     main {
-        margin: 25vh 25px;
+        margin: 20vh 25px;
         .blog-parent {
             display: grid;
-            gap: 1.5rem;
+            gap: 1rem;
             grid-auto-columns: 1fr;
             grid-template-areas:
                 "one"
@@ -49,34 +32,62 @@ body {
                 "three"
                 "four"
                 "five";
-            // padding-block: 2rem;
-            // margin-top: 20px;
-            // width: 95%;
-            // margin-inline: auto;
             .blog-child {
-                img {
-                    width: 40%;
-                    border-radius: 5px;
-                    float: left;
-                    margin: 5px;
-                }
-                &:nth-child(2n) > img {
-                    float: right;
-                }
                 background-color: $blog-background;
-                font-family: $text;
                 border-radius: 5px;
                 padding: 10px;
                 overflow: hidden;
+                text-decoration: none;
+                color: black;
+                img {
+                    width: 40%;
+                    border-radius: 10px;
+                    float: left;
+                    margin: 5px;
+                }
+                // nth-child to make some variability of the images
+                &:nth-child(2n) > img {
+                    float: right;
+                }
                 .blog-item-header {
                     font-family: $heading;
                     margin: 1vh 0;
+                    font-size: 1.5rem;
                 }
                 .published-date {
                     margin: 0 0.1vw;
                     text-align: right;
                 }
+
+                &:nth-child(1) {
+                    grid-area: one;
+                }
+                &:nth-child(2) {
+                    grid-area: two;
+                }
+                &:nth-child(3) {
+                    grid-area: three;
+                }
+                &:nth-child(4) {
+                    grid-area: four;
+                }
+                &:nth-child(5) {
+                    grid-area: five;
+                }
             }
         }
+    }
+}
+footer {
+    .to-the-top {
+        position: relative;
+        left: 27%;
+        bottom: 10vh;
+        background-color: black;
+        color: white;
+        height: 10px;
+        width: 100px;
+        text-decoration: none;
+        padding: 10px;
     }
 }
