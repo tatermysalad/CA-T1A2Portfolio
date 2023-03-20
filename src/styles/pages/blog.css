@@ -3,6 +3,13 @@ body {
   background-color: #d8a7b1;
 }
 
+header .home-button {
+  text-decoration: none;
+  color: black;
+}
+header:hover > #title {
+  text-decoration: underline;
+}
 header img {
   position: absolute;
   width: 20vw;

@@ -1,5 +1,12 @@
 // defines the color and ordering of the small/mobile view menu overlay
 header {
+    .home-button {
+        text-decoration: none;
+        color: black;
+    }
+    &:hover > #title{
+        text-decoration: underline;
+    }
     img {
         position: absolute;
         width: 20vw;

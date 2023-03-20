@@ -107,41 +107,86 @@ footer .social-media {
   display: none;
 }
 
-.logo {
+@keyframes fade-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+body header #contact {
+  font-family: "Abril Fatface", cursive;
+}
+body header .logo {
   display: none;
 }
-
-body section {
-  margin-top: 20vh;
+body header .page-title {
+  font-family: "Abril Fatface", cursive;
+  font-size: 40px;
+  position: absolute;
+  left: 35px;
+  top: -5px;
+}
+body main form {
   display: flex;
   flex-direction: column;
-  height: 60vh;
-  justify-content: space-around;
   align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 20vh;
 }
-body section .welcome {
-  font-family: "Abril Fatface", cursive;
-  font-size: 2rem;
-  text-align: right;
+body main form .form-elements {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
-body section .welcome .full-name {
-  display: none;
+body main form .form-elements label {
+  font-size: 1.2rem;
 }
-body section .welcome .welcome-sub {
-  vertical-align: text-top;
-  font-size: small;
+body main form .form-elements .form-input {
+  border: 1px solid black;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body section .about-me {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.7rem;
+body main form .form-elements .form-input:not(.form-textarea) {
+  height: 32px;
 }
-body section .about-me-sub {
-  font-family: "Abril Fatface", cursive;
-  font-size: 2rem;
-  text-decoration: none;
+body main form .form-elements .form-input.form-textarea {
+  resize: none;
+}
+body main form .form-elements .form-input:focus {
+  box-shadow: 0 0 2px 2px #ef7c8e;
+}
+body main form .btn-div {
+  text-align: center;
+}
+body main form .btn-div #submit {
+  height: 40px;
+  min-width: 120px;
+  background-color: #b6e2d3;
   color: black;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
 }
-body section .about-me-sub:hover {
-  text-shadow: 2px 2px black;
-  color: white;
-}/*# sourceMappingURL=home.css.map */
+body main form .btn-div #submit:hover {
+  cursor: pointer;
+  background-color: #ef7c8e;
+}
+
+@media screen and (min-width: 834px) {
+  .form-elements {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=contact.css.map */

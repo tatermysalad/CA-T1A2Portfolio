@@ -1,0 +1,93 @@
+@import "../components/index";
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+// Main styling
+body {
+    font-family: $text;
+    header {
+        // Changes the font in the menu overlay for the current page
+        #contact {
+            font-family: $heading;
+        }
+        // hides the logo for mobile view
+        .logo {
+            display: none;
+        }
+        .page-title {
+            font-family: $heading;
+            font-size: 40px;
+            position: absolute;
+            left: 35px;
+            top: -5px;
+        }
+    }
+    main {
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            margin-top: 20vh;
+            .form-elements {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+                label {
+                    font-size: 1.2rem;
+                }
+                .form-input {
+                    border: 1px solid black;
+                    border-radius: 4px;
+                    outline: none;
+                    font-size: 1.2rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                    &:not(.form-textarea) {
+                        height: 32px;
+                    }
+                    &.form-textarea {
+                        resize: none;
+                    }
+                    &:focus {
+                        box-shadow: 0 0 2px 2px $extra-color;
+                    }
+                }
+            }
+            .btn-div {
+                text-align: center;
+                #submit {
+                    height: 40px;
+                    min-width: 120px;
+                    background-color: $header;
+                    color: black;
+                    border-radius: 4px;
+                    border: none;
+                    outline: none;
+                    font-size: 1.1rem;
+                    margin-bottom: 24px;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $extra-color;
+                        // opacity: .0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $medium) {
+    .form-elements {
+        // display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

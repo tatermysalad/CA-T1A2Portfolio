@@ -44,11 +44,11 @@
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ed's Portfolio</title>
-        <link rel="stylesheet" href="../styles/pages/blog.css" />
+        <link rel="stylesheet" href="../styles/pages/contact.css" />
     </head>
     <body>
         <header class="menu">
-            <h3 class="page-title" id="title">Blog</h3>
+            <h3 class="page-title" id="title"><a href="../index.html" class="home-button">Contact</h3>
             <input id="menu-toggle" type="checkbox" />
             <label class="menu-button" for="menu-toggle">
                 <div class="menu-button-line menu-button-top-line"></div>
@@ -60,8 +60,11 @@
                     <a href="../index.html" class="logo nav-item">ED</a>
                     <a href="../index.html" class="home nav-item">Home</a>
                     <a href="./about.html" class="nav-item">About</a>
-                    <a href="./blog.html" class="nav-item" id="blog">Blog</a>
-                    <a href="./contact.html" class="nav-item contact"
+                    <a href="./blog.html" class="nav-item">Blog</a>
+                    <a
+                        href="./contact.html"
+                        class="nav-item contact"
+                        id="contact"
                         >Contact</a
                     >
                     <div class="social-media">
@@ -79,93 +82,32 @@
             </nav>
         </header>
         <main>
-            <div class="blog-parent">
-                <a href="./blog_articles/blog1.html"  class="blog-child">
-                    <h6 class="published-date">4th February 2023</h6>
-                    <h4 class="blog-item-header">
-                        Getting my feet into designing.
-                    </h4>
-                    <img
-                        src="../img/blog/design.jpg"
-                        alt="a person designing icons"
-                    />
-                    <article class="blog-item">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ea tenetur neque totam maxime fugit veniam, minus
-                        rem inventore ullam repudiandae illo eos. Nam dolore
-                        nulla magnam, exercitationem aspernatur laudantium
-                        cupiditate.
-                    </article>
-                </a>
-                <a href="./blog_articles/blog2.html" class="blog-child">
-                    <h6 class="published-date">31st January 2023</h6>
-                    <h4 class="blog-item-header">Taking on the outdoors.</h4>
-                    <img
-                        src="../img/blog/hiking.jpg"
-                        alt="people hiking in a grassy terain"
-                    />
-                    <article class="blog-item">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ea tenetur neque totam maxime fugit veniam, minus
-                        rem inventore ullam repudiandae illo eos. Nam dolore
-                        nulla magnam, exercitationem aspernatur laudantium
-                        cupiditate. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Accusamus officia laudantium expedita
-                        minima veniam sunt tempora quia, fugiat distinctio
-                        consequatur culpa magni id iure nam temporibus incidunt
-                        enim deserunt unde?
-                    </article>
-                </a>
-                <a href="./blog_articles/blog3.html"  class="blog-child">
-                    <h6 class="published-date">21st January 2023</h6>
-                    <h4 class="blog-item-header">My favourite food.</h4>
-                    <img src="../img/blog/sushi.jpg" alt="sushi on a plate" />
-                    <article class="blog-item">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ea tenetur neque totam maxime fugit veniam, minus
-                        rem inventore ullam repudiandae illo eos. Nam dolore
-                        nulla magnam, exercitationem aspernatur laudantium
-                        cupiditate. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Sit, et! Labore impedit fuga odio
-                        aliquam sapiente magnam ad dolore suscipit. Assumenda
-                        consequuntur adipisci dicta molestiae nemo quaerat vel
-                        ab unde?
-                    </article>
-                </a>
-                <a href="./blog_articles/blog4.html"  class="blog-child">
-                    <h6 class="published-date">13th January 2023</h6>
-                    <h4 class="blog-item-header">The joy of technology.</h4>
-                    <img
-                        src="../img/blog/developing.jpg"
-                        alt="code on a laptop"
-                    />
-                    <article class="blog-item">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ea tenetur neque totam maxime fugit veniam, minus
-                        rem inventore ullam repudiandae illo eos. Nam dolore
-                        nulla magnam, exercitationem aspernatur laudantium
-                        cupiditate.
-                    </article>
-                </a>
-                <a href="./blog_articles/blog5.html"  class="blog-child">
-                    <h6 class="published-date">1st January 2023</h6>
-                    <h4 class="blog-item-header">Getting into running.</h4>
-                    <img
-                        src="../img/blog/running.jpg"
-                        alt="person running with a sunset behind"
-                    />
-                    <article class="blog-item">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ea tenetur neque totam maxime fugit veniam, minus
-                        rem inventore ullam repudiandae illo eos. Nam dolore
-                        nulla magnam, exercitationem aspernatur laudantium
-                        cupiditate.
-                    </article>
-                </a>
-            </div>
+            <form>
+                <div class="form-elements">
+                    <label for="">Name:</label>
+                    <input class="form-input" type="text" />
+                </div>
+                <div class="form-elements">
+                    <label for="">Email:</label>
+                    <input class="form-input" type="text" />
+                </div>
+                <div class="form-elements">
+                    <label for="">Subject:</label>
+                    <input class="form-input" type="text" />
+                </div>
+                <div class="form-elements">
+                    <label for="">Message:</label>
+                    <textarea
+                        class="form-input form-textarea"
+                        rows="3"
+                    ></textarea>
+                </div>
+                <div class="btn-div">
+                    <button id="submit">Submit</button>
+                </div>
+            </form>
         </main>
         <footer>
-            <a href="#title" class="to-the-top">Back to the top^</a>
             <div class="social-media">
                 <a href="https://github.com" target="_blank"
                     ><i class="fa-brands fa-github"></i
