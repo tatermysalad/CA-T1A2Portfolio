@@ -4,7 +4,7 @@ header {
         text-decoration: none;
         color: black;
     }
-    &:hover > #title{
+    &:hover > #title {
         text-decoration: underline;
     }
     img {
@@ -74,6 +74,9 @@ header {
         left: 100vw;
         transition: 0.3s ease-in-out;
         z-index: 1;
+        @media screen and (min-width: $medium) {
+            transition: none;
+        }
         .nav-item-list {
             display: flex;
             flex-direction: column;
@@ -101,9 +104,75 @@ header {
                     padding-right: 15px;
                 }
             }
+            // hides logo for mobile view
+
+            .logo {
+                display: none;
+            }
         }
         .contact {
             margin-bottom: 3vh;
+        }
+    }
+}
+@media screen and (min-width: $medium) {
+    body {
+        header {
+            img {
+                position: absolute;
+                width: max(200px,20vw);
+                border-radius: 50%;
+                top: 15vh;
+                left: min(15vw,300px);
+                z-index: 0;
+            }
+            .menu-button {
+                display: none;
+            }
+            .navigation-menu {
+                background-color: $header;
+                width: 100%;
+                height: 100px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                .nav-item-list {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin-right: 20px;
+                    gap: 25px;
+                    height: 100px;
+
+                    .nav-item {
+                        text-decoration: none;
+                        font-family: $text;
+                        font-size: 30px;
+                        color: black;
+                        margin-left: 0vw;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    .logo {
+                        display: block;
+                        position: absolute;
+                        top: 19px;
+                        left: 19px;
+                        font-family: $heading;
+                        font-size: 40px;
+                        color: black;
+                    }
+                    .social-media {
+                        display: none;
+                    }
+                }
+                .contact {
+                    margin-bottom: 0px;
+                }
+            }
         }
     }
 }

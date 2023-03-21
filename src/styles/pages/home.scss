@@ -1,12 +1,9 @@
 @import "../components/index";
-// hides logo for mobile view
-.logo {
-    display: none;
-}
+
 // main styling
 body {
     section {
-        margin-top: 20vh;
+        margin-top: max(20vh, 100px);
         display: flex;
         flex-direction: column;
         height: 60vh;
@@ -17,12 +14,14 @@ body {
             font-size: 2rem;
             // margin-top: 20vh;
             text-align: right;
-            .full-name {
-                display: none;
+            @media screen and (max-width: $small) {
+                .full-name {
+                    display: none;
+                }
             }
             .welcome-sub {
                 vertical-align: text-top;
-                font-size: small;
+                font-size: 1.3rem;
             }
         }
         .about-me {
@@ -39,6 +38,47 @@ body {
             &:hover {
                 text-shadow: 2px 2px black;
                 color: white;
+            }
+        }
+    }
+}
+// medium styling
+@media screen and (min-width: $medium) {
+    body {
+        section {
+            margin-top: max(20vh, 100px);
+            display: flex;
+            flex-direction: column;
+            // height: 60vh;
+            justify-content: space-around;
+            align-items: center;
+            .welcome {
+                font-family: $heading;
+                font-size: 2rem;
+                text-align: right;
+                width: min(90%,700px);
+                .welcome-sub {
+                    vertical-align: text-top;
+                    font-size: 1.3rem;
+                }
+            }
+            .about-me {
+                font-family: $text;
+                font-size: 1.7rem;
+                width: min(90%,700px);
+
+                // padding-top: 20vh;
+            }
+            // Changes the headings for specific words to show user they are links
+            .about-me-sub {
+                font-family: $heading;
+                font-size: 2rem;
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    text-shadow: 2px 2px black;
+                    color: white;
+                }
             }
         }
     }

@@ -1,19 +1,7 @@
 @import "../components/index";
-// Changes the font in the menu overlay for the current page
 
 // Main styling
 body {
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    align-items: center;
-    height: 50vh;
-    margin-top: 20vh;
-    margin-left: 35px;
-    margin-right: 35px;
-    font-family: $text;
-    font-size: 0.9rem;
-    gap: 5vw;
     header {
         .about {
             font-family: $heading;
@@ -25,27 +13,31 @@ body {
         #about {
             font-family: $heading;
         }
-        // hides the logo for mobile view
-        .logo {
-            display: none;
-        }
     }
     main {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        margin: 120px 35px 0px;
+        font-family: $text;
+        font-size: 0.9rem;
+        gap: 5vw;
+        @media screen and (min-width:$medium) {
+           font-size: 2rem;     
+        }
         .item {
             margin-bottom: 10px;
         }
     }
-    footer {
-        .resume {
-            background-color: black;
-            height: 10px;
-            width: 10px;
-            text-decoration: none;
-            color: white;
-            padding: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10px;
-        }
+
+    .resume {
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
     }
 }

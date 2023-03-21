@@ -2,15 +2,14 @@
 
 // Main styling
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: $text;
     header {
         // Changes the font in the menu overlay for the current page
         #blog {
             font-family: $heading;
-        }
-        // hides the logo for mobile view
-        .logo {
-            display: none;
         }
     }
     .page-title {
@@ -21,10 +20,16 @@ body {
         top: -5px;
     }
     main {
-        margin: 20vh 25px;
+        margin: 120px 25px 2vh;
+        @media screen and (min-width: $medium) {
+            margin: 120px 10vw 2vh;
+        }
+        @media screen and (min-width: $large) {
+            margin: 120px 70px 30px;
+        }
         .blog-parent {
             display: grid;
-            gap: 1rem;
+            gap: 1.5rem;
             grid-auto-columns: 1fr;
             grid-template-areas:
                 "one"
@@ -32,6 +37,18 @@ body {
                 "three"
                 "four"
                 "five";
+            @media screen and (min-width: $medium) {
+                grid-template-areas:
+                    "two two"
+                    "one three"
+                    "four three"
+                    "five five";
+            }
+            @media screen and (min-width: $large) {
+                grid-template-areas:
+                    "two two one three"
+                    "five four four three";
+            }
             .blog-child {
                 background-color: $blog-background;
                 border-radius: 5px;
@@ -79,15 +96,21 @@ body {
     }
 }
 footer {
+    display: flex;
+
     .to-the-top {
-        position: relative;
-        left: 27%;
-        bottom: 10vh;
+        //     position: relative;
+        //     left: 27%;
+        //     bottom: 30px;
         background-color: black;
         color: white;
-        height: 10px;
-        width: 100px;
+        // height: 10px;
+        // width: 100px;
         text-decoration: none;
-        padding: 10px;
+        padding: 15px;
+        text-align: center;
+        @media screen and (min-width: $medium) {
+            display: none;
+        }
     }
 }
