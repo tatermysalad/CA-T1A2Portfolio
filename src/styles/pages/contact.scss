@@ -34,12 +34,13 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            animation: fade-up 0.5s;
+
             // width: 100%;
             .form-elements {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 10px;
-                animation: fade-up 0.5s;
 
                 label {
                     font-size: 1.2rem;
@@ -90,6 +91,7 @@ body {
         margin-right: auto;
         display: flex;
         flex-direction: column;
+
         div {
             font-size: max(5vw, 8px);
         }
@@ -124,6 +126,10 @@ body {
                 // right: 10vw;
                 align-items: flex-end;
                 margin-top: 90px;
+                gap: 10px;
+                label {
+                    margin-right: 5px;
+                }
                 .btn-div {
                     width: 300px;
                 }
@@ -143,18 +149,17 @@ body {
                 font-size: 3vw;
             }
             .social-media-wrapping {
-
                 .social-media {
                     display: flex;
                     right: 0px;
                     flex-direction: row;
-                    margin-right: 70px;
+                    margin-right: 10px;
                     justify-content: flex-start;
 
                     a {
                         text-decoration: none;
                         color: black;
-                        font-size: 80px;
+                        font-size: 50px;
                     }
                 }
             }

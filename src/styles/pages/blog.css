@@ -122,7 +122,7 @@ header .navigation-menu .contact {
 }
 
 @media screen and (min-width: 767px) {
-  body header img {
+  body header a > img {
     position: absolute;
     width: max(200px, 20vw);
     border-radius: 50%;
@@ -234,6 +234,7 @@ body .page-title {
 }
 body main {
   margin: 120px 25px 2vh;
+  animation: fade-up 0.5s;
 }
 @media screen and (min-width: 767px) {
   body main {

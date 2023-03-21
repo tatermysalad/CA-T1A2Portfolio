@@ -19,12 +19,13 @@ body {
         flex-direction: column;
         // justify-content: center;
         align-items: center;
-        margin: 120px 35px 0px;
+        margin: max(120px, 20vh) max(35px, 10vw) 0px;
         font-family: $text;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         gap: 5vw;
-        @media screen and (min-width:$medium) {
-           font-size: 2rem;     
+        animation: fade-up 0.5s;
+        @media screen and (min-width: $medium) {
+            font-size: 1.5rem;
         }
         .item {
             margin-bottom: 10px;

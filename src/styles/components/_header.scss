@@ -118,7 +118,7 @@ header {
 @media screen and (min-width: $medium) {
     body {
         header {
-            img {
+            a > img {
                 position: absolute;
                 width: max(200px,20vw);
                 border-radius: 50%;

@@ -21,6 +21,7 @@ body {
     }
     main {
         margin: 120px 25px 2vh;
+        animation: fade-up 0.5s;
         @media screen and (min-width: $medium) {
             margin: 120px 10vw 2vh;
         }
