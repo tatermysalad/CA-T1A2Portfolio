@@ -16,7 +16,7 @@ body {
             font-size: 2rem;
             // margin-top: 20vh;
             text-align: right;
-            @media screen and (max-width: $small) {
+            @media screen and (max-width: $medium) {
                 .full-name {
                     display: none;
                 }

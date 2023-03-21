@@ -81,7 +81,7 @@ header .navigation-menu {
   transition: 0.3s ease-in-out;
   z-index: 1;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 760px) {
   header .navigation-menu {
     transition: none;
   }
@@ -121,7 +121,7 @@ header .navigation-menu .contact {
   margin-bottom: 3vh;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 760px) {
   body header a > img {
     position: absolute;
     width: max(200px, 20vw);
@@ -180,7 +180,7 @@ footer .social-media {
   display: none;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 760px) {
   footer {
     position: fixed;
     bottom: 15px;
@@ -310,10 +310,10 @@ body footer .social-media {
 body footer .social-media a {
   text-decoration: none;
   color: black;
-  font-size: 3em;
+  font-size: max(1.5em, 40px);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 760px) {
   body {
     font-family: "Poppins", sans-serif;
     display: flex;
