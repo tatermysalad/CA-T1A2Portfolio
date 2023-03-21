@@ -48,7 +48,9 @@
     </head>
     <body>
         <header class="menu">
-            <h3 class="page-title" id="title"><a href="../blog.html" class="home-button">Blog Entry</a></h3>
+            <h3 class="page-title" id="title">
+                <a href="../blog.html" class="home-button">Blog Entry</a>
+            </h3>
             <input id="menu-toggle" type="checkbox" />
             <label class="menu-button" for="menu-toggle">
                 <div class="menu-button-line menu-button-top-line"></div>
@@ -79,15 +81,24 @@
             </nav>
         </header>
         <main>
-            <div class="blog-parent" style="padding-bottom: 0px">
-                <section class="blog-child">
+            <div
+                class="blog-parent"
+                style="padding-bottom: 0px; display: block; width: 70vw"
+            >
+                <section
+                    class="blog-child"
+                    style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    "
+                >
                     <img
                         src="../../img/blog/developing.jpg"
                         alt="a person designing icons"
                         style="
                             width: 90%;
                             float: none;
-                            margin-left: 5%;
                             margin-top: 5%;
                             border-radius: 20px;
                         "
@@ -109,7 +120,7 @@
                             quisquam ducimus cupiditate asperiores, mollitia
                             ipsum sint enim doloremque modi dolore nobis.
                         </div>
-                        <div>
+                        <div style="padding-bottom: 15px">
                             Lorem ipsum dolor sit, amet consectetur adipisicing
                             elit. Praesentium laboriosam itaque vitae aspernatur
                             molestias porro temporibus voluptatibus cumque
