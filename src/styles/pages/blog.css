@@ -112,7 +112,7 @@ header .navigation-menu .nav-item-list .social-media a {
   color: black;
   text-decoration: none;
   font-size: 2rem;
-  padding-right: 15px;
+  padding-right: 20px;
 }
 header .navigation-menu .nav-item-list .logo {
   display: none;
@@ -176,7 +176,7 @@ header .navigation-menu .contact {
     margin-bottom: 0px;
   }
 }
-.social-media {
+body > footer > .social-media {
   display: none;
 }
 

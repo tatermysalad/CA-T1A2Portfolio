@@ -101,11 +101,10 @@ header {
                     color: black;
                     text-decoration: none;
                     font-size: 2rem;
-                    padding-right: 15px;
+                    padding-right: 20px;
                 }
             }
             // hides logo for mobile view
-
             .logo {
                 display: none;
             }
@@ -120,10 +119,10 @@ header {
         header {
             a > img {
                 position: absolute;
-                width: max(200px,20vw);
+                width: max(200px, 20vw);
                 border-radius: 50%;
-                top: max(15vh,150px);
-                left: min(7vw,300px);
+                top: max(15vh, 150px);
+                left: min(7vw, 300px);
                 z-index: 0;
             }
             .menu-button {
