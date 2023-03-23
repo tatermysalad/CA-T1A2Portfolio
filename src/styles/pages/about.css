@@ -176,7 +176,7 @@ header .navigation-menu .contact {
     margin-bottom: 0px;
   }
 }
-footer .social-media {
+.social-media {
   display: none;
 }
 
@@ -216,40 +216,50 @@ footer .social-media {
     width: 20px;
   }
 }
-body header .about {
+header .about {
   font-family: "Abril Fatface", cursive;
   font-size: 40px;
   position: absolute;
   left: 35px;
   top: -5px;
 }
-body header #about {
+header #about {
   font-family: "Abril Fatface", cursive;
+  position: relative;
+  bottom: 1.5px;
 }
-body main {
+
+main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: max(120px, 20vh) max(35px, 10vw) 0px;
+  width: min(80vw, 600px);
+  margin-inline: auto;
+  margin-top: 120px;
   font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
-  gap: 5vw;
+  font-size: clamp(0.6rem, 1vw + 1rem, 2rem);
   animation: fade-up 0.5s;
 }
 @media screen and (min-width: 760px) {
-  body main {
+  main {
     font-size: 1.5rem;
+    margin-top: clamp(120px, 20vh, 200px);
   }
 }
-body main .item {
-  margin-bottom: 10px;
+main .item {
+  margin-bottom: clamp(10px, 10vw, 50px);
 }
-body .resume {
+
+.resume-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+}
+.resume-wrapper .resume {
   background-color: black;
   text-decoration: none;
   color: white;
   padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+  text-align: center;
+  font-size: clamp(0.6rem, 2vw + 0.5rem, 1.5rem);
 }/*# sourceMappingURL=about.css.map */

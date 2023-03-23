@@ -1,44 +1,53 @@
 @import "../components/index";
 
 // Main styling
-body {
-    header {
-        .about {
-            font-family: $heading;
-            font-size: 40px;
-            position: absolute;
-            left: 35px;
-            top: -5px;
-        }
-        #about {
-            font-family: $heading;
-        }
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        align-items: center;
-        margin: max(120px, 20vh) max(35px, 10vw) 0px;
-        font-family: $text;
-        font-size: 1.1rem;
-        gap: 5vw;
-        animation: fade-up 0.5s;
-        @media screen and (min-width: $medium) {
-            font-size: 1.5rem;
-        }
-        .item {
-            margin-bottom: 10px;
-        }
-    }
 
+header {
+    .about {
+        font-family: $heading;
+        font-size: 40px;
+        position: absolute;
+        left: 35px;
+        top: -5px;
+    }
+    // changes the button of the current page
+    #about {
+        font-family: $heading;
+        position: relative;
+        bottom: 1.5px;
+    }
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min(80vw, 600px);
+    // margin keeps the text in the middle while maintaining a nice fluid zoom
+    margin-inline: auto;
+    margin-top: 120px;
+    font-family: $text;
+    font-size: clamp(0.6rem, 1vw + 1rem, 2rem);
+    animation: fade-up 0.5s;
+    @media screen and (min-width: $medium) {
+        font-size: 1.5rem;
+        margin-top: clamp(120px, 20vh, 200px);
+    }
+    .item {
+        margin-bottom: clamp(10px, 10vw, 50px);
+    }
+}
+//had to add a wrapper to make the box not a defined width
+//adding padding onto the wrapper to make it lower down and seperate from the paragraphs
+.resume-wrapper {
+    display: flex;
+    margin-bottom: 15px;
     .resume {
         background-color: black;
         text-decoration: none;
         color: white;
         padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
+        text-align: center;
+        font-size: clamp(0.6rem, 2vw + 0.5rem, 1.5rem);
     }
 }

@@ -1,9 +1,8 @@
-footer {
-    // remove social items for small/mobile view
-    .social-media {
-        display: none;
-    }
+// remove social items for small/mobile view
+.social-media {
+    display: none;
 }
+
 @media screen and (min-width: $medium) {
     footer {
         position: fixed;
