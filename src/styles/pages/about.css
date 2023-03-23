@@ -126,8 +126,8 @@ header .navigation-menu .contact {
     position: absolute;
     width: max(200px, 20vw);
     border-radius: 50%;
-    top: 15vh;
-    left: min(15vw, 300px);
+    top: max(15vh, 150px);
+    left: min(7vw, 300px);
     z-index: 0;
   }
   body header .menu-button {
