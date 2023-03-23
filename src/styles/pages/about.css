@@ -176,7 +176,7 @@ header .navigation-menu .contact {
     margin-bottom: 0px;
   }
 }
-body > footer > .social-media {
+.social-media {
   display: none;
 }
 
