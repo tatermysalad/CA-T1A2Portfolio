@@ -1,5 +1,5 @@
 // remove social items for small/mobile view
-.social-media {
+footer .social-media {
     display: none;
 }
 
@@ -11,8 +11,6 @@
         .social-media {
             display: flex;
             flex-direction: column;
-            // gap: 15px;
-            // margin: 5vw;
             a {
                 color: black;
                 text-decoration: none;
@@ -32,8 +30,6 @@
         .social-media {
             display: flex;
             flex-direction: column;
-            // gap: 15px;
-            // margin: 5vw;
             a {
                 color: black;
                 text-decoration: none;

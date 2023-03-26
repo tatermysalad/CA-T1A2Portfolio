@@ -172,6 +172,30 @@ header {
                     margin-bottom: 0px;
                 }
             }
+            // had to add this in for larger screen sizes to stop a bug
+            #menu-toggle {
+                display: none;
+                &:checked {
+                    & + .menu-button {
+                        gap: 0px;
+                        background-color: $background-color;
+                        .menu-button-top-line {
+                            transform: rotate(45deg) scale(1.3, 8);
+                            margin-top: 20px;
+                        }
+                        .menu-button-middle-line {
+                            opacity: 0;
+                        }
+                        .menu-button-bottom-line {
+                            transform: rotate(-45deg) scale(1.3, 8);
+                            margin-bottom: 19px;
+                        }
+                        & + .navigation-menu {
+                            transform: translateX(0vw);
+                        }
+                    }
+                }
+            }
         }
     }
 }

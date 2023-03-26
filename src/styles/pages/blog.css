@@ -175,8 +175,29 @@ header .navigation-menu .contact {
   body header .navigation-menu .contact {
     margin-bottom: 0px;
   }
+  body header #menu-toggle {
+    display: none;
+  }
+  body header #menu-toggle:checked + .menu-button {
+    gap: 0px;
+    background-color: #d8a7b1;
+  }
+  body header #menu-toggle:checked + .menu-button .menu-button-top-line {
+    transform: rotate(45deg) scale(1.3, 8);
+    margin-top: 20px;
+  }
+  body header #menu-toggle:checked + .menu-button .menu-button-middle-line {
+    opacity: 0;
+  }
+  body header #menu-toggle:checked + .menu-button .menu-button-bottom-line {
+    transform: rotate(-45deg) scale(1.3, 8);
+    margin-bottom: 19px;
+  }
+  body header #menu-toggle:checked + .menu-button + .navigation-menu {
+    transform: translateX(0vw);
+  }
 }
-.social-media {
+footer .social-media {
   display: none;
 }
 
