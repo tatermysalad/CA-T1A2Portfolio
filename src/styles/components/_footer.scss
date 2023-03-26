@@ -6,8 +6,8 @@ footer .social-media {
 @media screen and (min-width: $medium) {
     footer {
         position: fixed;
-        bottom: 15px;
-        left: 2vw;
+        bottom: min(1vw,2px);
+        left: min(1vw,2px);
         .social-media {
             display: flex;
             flex-direction: column;
@@ -15,7 +15,7 @@ footer .social-media {
                 color: black;
                 text-decoration: none;
                 font-size: 2rem;
-                padding: 15px;
+                padding: min(10px, 2vh);
                 width: 20px;
             }
         }
@@ -24,12 +24,13 @@ footer .social-media {
 
 @media screen and (min-width: $large) {
     footer {
-        position: fixed;
-        bottom: 15px;
-        left: 15px;
+        //moving the social icons to work on a large screen
+        position: static;
+        // bottom: 15px;
+        // left: 46vw;
         .social-media {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             a {
                 color: black;
                 text-decoration: none;

@@ -1,46 +1,52 @@
 @import "../components/index";
 
 // main styling
-section {
-    margin-top: max(20vh, 100px);
-    display: flex;
-    flex-direction: column;
-    height: 60vh;
-    justify-content: space-around;
-    align-items: center;
-    .welcome {
-        animation: fade-up 0.5s;
+body {
+     display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    section {
+        margin-top: max(20vh, 100px);
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        justify-content: space-around;
+        align-items: center;
+        width: 80vw;
+        .welcome {
+            animation: fade-up 0.5s;
 
-        font-family: $heading;
-        font-size: 2rem;
-        // margin-top: 20vh;
-        text-align: right;
-        @media screen and (max-width: $medium) {
-            .full-name {
-                display: none;
+            font-family: $heading;
+            font-size: 2rem;
+            // margin-top: 20vh;
+            text-align: right;
+            @media screen and (max-width: $medium) {
+                .full-name {
+                    display: none;
+                }
+            }
+            .welcome-sub {
+                vertical-align: text-top;
+                font-size: 1.3rem;
             }
         }
-        .welcome-sub {
-            vertical-align: text-top;
-            font-size: 1.3rem;
+        .about-me {
+            animation: fade-up 0.5s;
+            animation-delay: 0.1s;
+            font-family: $text;
+            font-size: 1.7rem;
         }
-    }
-    .about-me {
-        animation: fade-up 0.5s;
-        animation-delay: 0.1s;
-        font-family: $text;
-        font-size: 1.7rem;
-        // padding-top: 20vh;
-    }
-    // Changes the headings for specific words to show user they are links
-    .about-me-sub {
-        font-family: $heading;
-        font-size: 2rem;
-        text-decoration: none;
-        color: black;
-        &:hover {
-            text-shadow: 2px 2px black;
-            color: white;
+        // Changes the headings for specific words to show user they are links
+        .about-me-sub {
+            font-family: $heading;
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                text-shadow: 2px 2px black;
+                color: white;
+            }
         }
     }
 }
@@ -48,6 +54,48 @@ section {
 // medium styling
 @media screen and (min-width: $medium) {
     body {
+        section {
+            margin-top: max(20vh, 100px);
+            display: flex;
+            flex-direction: column;
+            // height: 60vh;
+            justify-content: space-around;
+            align-items: center;
+            .welcome {
+                font-family: $heading;
+                font-size: 2rem;
+                text-align: right;
+                width: min(90%, 700px);
+                .welcome-sub {
+                    vertical-align: text-top;
+                    font-size: 1.3rem;
+                }
+            }
+            .about-me {
+                font-family: $text;
+                font-size: 1.7rem;
+                width: min(90%, 700px);
+
+                // padding-top: 20vh;
+            }
+            // Changes the headings for specific words to show user they are links
+            .about-me-sub {
+                font-family: $heading;
+                font-size: 2rem;
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    text-shadow: 2px 2px black;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $large) {
+    body {
+        height: 95vh;
+       
         section {
             margin-top: max(20vh, 100px);
             display: flex;
