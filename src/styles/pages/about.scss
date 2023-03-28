@@ -17,31 +17,35 @@ header {
         bottom: 1.5px;
     }
 }
-main {
+body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: min(80vw, 600px);
-    // margin keeps the text in the middle while maintaining a nice fluid zoom
-    margin-inline: auto;
-    margin-top: 120px;
-    font-family: $text;
-    font-size: clamp(0.6rem, 1vw + 1rem, 2rem);
-    animation: fade-up 0.5s;
-    @media screen and (min-width: $medium) {
-        font-size: 1.5rem;
-        margin-top: clamp(120px, 20vh, 200px);
-    }
-    .item {
-        margin-bottom: clamp(10px, 10vw, 50px);
+    height: 80vh;
+    main {
+        width: min(80vw, 600px);
+        // margin keeps the text in the middle while maintaining a nice fluid zoom
+        margin-inline: auto;
+        margin-top: 120px;
+        font-family: $text;
+        font-size: clamp(0.6rem, 1vw + 1rem, 2rem);
+        animation: fade-up 0.5s;
+        @media screen and (min-width: $medium) {
+            font-size: 1.5rem;
+            margin-top: clamp(120px, 20vh, 200px);
+        }
+        .item {
+            margin-bottom: clamp(10px, 10vw, 50px);
+        }
     }
 }
 //had to add a wrapper to make the box not a defined width
 //adding padding onto the wrapper to make it lower down and seperate from the paragraphs
 .resume-wrapper {
     display: flex;
-    margin-bottom: 15px;
+    justify-content: center;
+    margin-bottom: 10vh;
     .resume {
         background-color: black;
         text-decoration: none;

@@ -319,6 +319,7 @@ footer .social-media {
 }
 @media screen and (min-width: 1213px) {
   footer {
+    /* moving the social icons to work on a large screen */
     position: static;
   }
   footer .social-media {

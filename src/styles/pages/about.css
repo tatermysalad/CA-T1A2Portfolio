@@ -319,6 +319,7 @@ footer .social-media {
 }
 @media screen and (min-width: 1213px) {
   footer {
+    /* moving the social icons to work on a large screen */
     position: static;
   }
   footer .social-media {
@@ -346,11 +347,14 @@ header #about {
   bottom: 1.5px;
 }
 
-main {
+body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  height: 80vh;
+}
+body main {
   width: min(80vw, 600px);
   margin-inline: auto;
   margin-top: 120px;
@@ -359,18 +363,19 @@ main {
   animation: fade-up 0.5s;
 }
 @media screen and (min-width: 760px) {
-  main {
+  body main {
     font-size: 1.5rem;
     margin-top: clamp(120px, 20vh, 200px);
   }
 }
-main .item {
+body main .item {
   margin-bottom: clamp(10px, 10vw, 50px);
 }
 
 .resume-wrapper {
   display: flex;
-  margin-bottom: 15px;
+  justify-content: center;
+  margin-bottom: 10vh;
 }
 .resume-wrapper .resume {
   background-color: black;

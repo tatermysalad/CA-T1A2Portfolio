@@ -58,7 +58,6 @@ body {
             margin-top: max(20vh, 100px);
             display: flex;
             flex-direction: column;
-            // height: 60vh;
             justify-content: space-around;
             align-items: center;
             .welcome {
@@ -75,11 +74,9 @@ body {
                 font-family: $text;
                 font-size: 1.7rem;
                 width: min(90%, 700px);
-
-                // padding-top: 20vh;
             }
-            // Changes the headings for specific words to show user they are links
             .about-me-sub {
+                /* Changes the headings for specific words to show user they are links */
                 font-family: $heading;
                 font-size: 2rem;
                 text-decoration: none;
@@ -95,12 +92,10 @@ body {
 @media screen and (min-width: $large) {
     body {
         height: 95vh;
-       
         section {
             margin-top: max(20vh, 100px);
             display: flex;
             flex-direction: column;
-            // height: 60vh;
             justify-content: space-around;
             align-items: center;
             .welcome {
@@ -117,11 +112,9 @@ body {
                 font-family: $text;
                 font-size: 1.7rem;
                 width: min(90%, 700px);
-
-                // padding-top: 20vh;
             }
-            // Changes the headings for specific words to show user they are links
             .about-me-sub {
+                /* Changes the headings for specific words to show user they are links */
                 font-family: $heading;
                 font-size: 2rem;
                 text-decoration: none;

@@ -319,6 +319,7 @@ footer .social-media {
 }
 @media screen and (min-width: 1213px) {
   footer {
+    /* moving the social icons to work on a large screen */
     position: static;
   }
   footer .social-media {
@@ -404,6 +405,7 @@ body section .about-me-sub:hover {
     width: min(90%, 700px);
   }
   body section .about-me-sub {
+    /* Changes the headings for specific words to show user they are links */
     font-family: "Abril Fatface", cursive;
     font-size: 2rem;
     text-decoration: none;
@@ -441,6 +443,7 @@ body section .about-me-sub:hover {
     width: min(90%, 700px);
   }
   body section .about-me-sub {
+    /* Changes the headings for specific words to show user they are links */
     font-family: "Abril Fatface", cursive;
     font-size: 2rem;
     text-decoration: none;

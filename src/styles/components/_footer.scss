@@ -24,10 +24,8 @@ footer .social-media {
 
 @media screen and (min-width: $large) {
     footer {
-        //moving the social icons to work on a large screen
+        /* moving the social icons to work on a large screen */
         position: static;
-        // bottom: 15px;
-        // left: 46vw;
         .social-media {
             display: flex;
             flex-direction: row;
