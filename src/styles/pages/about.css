@@ -375,9 +375,14 @@ header #about {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  height: 80vh;
+  height: 95vh;
+}
+@media screen and (min-width: 1213px) {
+  body {
+    /* adding this in for spacing with the social media icons */
+    justify-content: space-between;
+  }
 }
 body main {
   width: min(80vw, 600px);
@@ -403,7 +408,7 @@ adding padding onto the wrapper to make it lower down and seperate from the para
 .resume-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
 }
 .resume-wrapper .resume {
   background-color: black;
