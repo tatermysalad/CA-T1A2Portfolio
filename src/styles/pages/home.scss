@@ -1,11 +1,11 @@
 @import "../components/index";
 
-// main styling
+/* mobile styling */
 body {
-     display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     section {
         margin-top: max(20vh, 100px);
         display: flex;
@@ -16,13 +16,12 @@ body {
         width: 80vw;
         .welcome {
             animation: fade-up 0.5s;
-
             font-family: $heading;
             font-size: 2rem;
-            // margin-top: 20vh;
             text-align: right;
             @media screen and (max-width: $medium) {
                 .full-name {
+                    /* removes my full name for smaller screen sizes*/
                     display: none;
                 }
             }
@@ -37,7 +36,7 @@ body {
             font-family: $text;
             font-size: 1.7rem;
         }
-        // Changes the headings for specific words to show user they are links
+        /* Changes the headings for specific words to show user they are links */
         .about-me-sub {
             font-family: $heading;
             font-size: 2rem;
@@ -51,7 +50,7 @@ body {
     }
 }
 
-// medium styling
+/* medium styling */
 @media screen and (min-width: $medium) {
     body {
         section {
@@ -89,6 +88,7 @@ body {
         }
     }
 }
+
 @media screen and (min-width: $large) {
     body {
         height: 95vh;

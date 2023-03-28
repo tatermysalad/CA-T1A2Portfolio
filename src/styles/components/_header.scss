@@ -1,4 +1,4 @@
-// defines the color and ordering of the small/mobile view menu overlay
+/* defines the color and ordering of the small/mobile view menu overlay */
 header {
     .home-button {
         text-decoration: none;
@@ -15,8 +15,8 @@ header {
         left: 5vw;
         z-index: 0;
     }
-    // menu button creation
-    // position box, then create the inner lines with flexbox
+    /* menu button creation
+    position box, then create the inner lines with flexbox */
     .menu-button {
         position: absolute;
         right: 35px;
@@ -39,10 +39,10 @@ header {
             transition: 0.2s;
         }
     }
-    // Animations, on toggle of the menu box which is acting as the checkbox
-    // The menu buttons transform to form an X
-    // The navigation menu slides in from the right
     #menu-toggle {
+        /* Animations, on toggle of the menu box which is acting as the checkbox
+         The menu buttons transform to form an X
+         The navigation menu slides in from the right */
         display: none;
         &:checked {
             & + .menu-button {
@@ -104,7 +104,7 @@ header {
                     padding-right: 20px;
                 }
             }
-            // hides logo for mobile view
+            /* hides logo for mobile view */
             .logo {
                 display: none;
             }
@@ -118,6 +118,7 @@ header {
     body {
         header {
             a > img {
+                /* sizing for my picture */
                 position: absolute;
                 width: clamp(10vh, 10vh + 100px, 200px);
                 border-radius: 50%;
@@ -175,9 +176,12 @@ header {
                     margin-bottom: 0px;
                 }
             }
-            // had to add this in for larger screen sizes to stop a bug
             #menu-toggle {
+                /* Animations, on toggle of the menu box which is acting as the checkbox
+                The menu buttons transform to form an X
+                The navigation menu slides in from the right */
                 display: none;
+                /* had to add this in for larger screen sizes to stop a bug which would make the header move to the left of the screen */
                 &:checked {
                     & + .menu-button {
                         gap: 0px;
@@ -206,6 +210,7 @@ header {
     body {
         header {
             a > img {
+                /* sizing for my picture */
                 position: absolute;
                 width: clamp(10vh, 10vh + 100px, 200px);
                 border-radius: 50%;
@@ -263,9 +268,12 @@ header {
                     margin-bottom: 0px;
                 }
             }
-            // had to add this in for larger screen sizes to stop a bug
             #menu-toggle {
+                /* Animations, on toggle of the menu box which is acting as the checkbox
+                The menu buttons transform to form an X
+                The navigation menu slides in from the right */
                 display: none;
+                /* had to add this in for larger screen sizes to stop a bug */
                 &:checked {
                     & + .menu-button {
                         gap: 0px;

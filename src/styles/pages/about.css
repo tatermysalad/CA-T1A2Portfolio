@@ -3,6 +3,8 @@ body {
   background-color: #d8a7b1;
 }
 
+/* font-family: 'Abril Fatface', cursive; */
+/* font-family: "Poppins", sans-serif; */
 @keyframes fade-up {
   0% {
     transform: translateY(30px);
@@ -12,6 +14,11 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+}
+/* defines the color and ordering of the small/mobile view menu overlay */
+header {
+  /* menu button creation
+  position box, then create the inner lines with flexbox */
 }
 header .home-button {
   text-decoration: none;
@@ -51,6 +58,9 @@ header .menu-button .menu-button-line {
   transition: 0.2s;
 }
 header #menu-toggle {
+  /* Animations, on toggle of the menu box which is acting as the checkbox
+   The menu buttons transform to form an X
+   The navigation menu slides in from the right */
   display: none;
 }
 header #menu-toggle:checked + .menu-button {
@@ -92,6 +102,7 @@ header .navigation-menu .nav-item-list {
   justify-content: center;
   height: 80vh;
   gap: 25px;
+  /* hides logo for mobile view */
 }
 header .navigation-menu .nav-item-list .nav-item {
   text-decoration: none;
@@ -123,6 +134,7 @@ header .navigation-menu .contact {
 
 @media screen and (min-width: 760px) {
   body header a > img {
+    /* sizing for my picture */
     position: absolute;
     width: clamp(10vh, 10vh + 100px, 200px);
     border-radius: 50%;
@@ -187,7 +199,11 @@ header .navigation-menu .contact {
 }
 @media screen and (min-width: 760px) {
   body header #menu-toggle {
+    /* Animations, on toggle of the menu box which is acting as the checkbox
+    The menu buttons transform to form an X
+    The navigation menu slides in from the right */
     display: none;
+    /* had to add this in for larger screen sizes to stop a bug which would make the header move to the left of the screen */
   }
   body header #menu-toggle:checked + .menu-button {
     gap: 0px;
@@ -210,6 +226,7 @@ header .navigation-menu .contact {
 }
 @media screen and (min-width: 1213px) {
   body header a > img {
+    /* sizing for my picture */
     position: absolute;
     width: clamp(10vh, 10vh + 100px, 200px);
     border-radius: 50%;
@@ -274,7 +291,11 @@ header .navigation-menu .contact {
 }
 @media screen and (min-width: 1213px) {
   body header #menu-toggle {
+    /* Animations, on toggle of the menu box which is acting as the checkbox
+    The menu buttons transform to form an X
+    The navigation menu slides in from the right */
     display: none;
+    /* had to add this in for larger screen sizes to stop a bug */
   }
   body header #menu-toggle:checked + .menu-button {
     gap: 0px;
@@ -295,6 +316,7 @@ header .navigation-menu .contact {
     transform: translateX(0vw);
   }
 }
+/* remove social items as they are located in the menu overlay */
 footer .social-media {
   display: none;
 }
@@ -334,6 +356,9 @@ footer .social-media {
     width: 20px;
   }
 }
+header {
+  /* changes the button of the current page */
+}
 header .about {
   font-family: "Abril Fatface", cursive;
   font-size: 40px;
@@ -356,6 +381,7 @@ body {
 }
 body main {
   width: min(80vw, 600px);
+  /* margin keeps the text in the middle while maintaining a nice fluid zoom */
   margin-inline: auto;
   margin-top: 120px;
   font-family: "Poppins", sans-serif;
@@ -372,6 +398,8 @@ body main .item {
   margin-bottom: clamp(10px, 10vw, 50px);
 }
 
+/* had to add a wrapper to make the box not a defined width
+adding padding onto the wrapper to make it lower down and seperate from the paragraphs */
 .resume-wrapper {
   display: flex;
   justify-content: center;

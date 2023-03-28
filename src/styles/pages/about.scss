@@ -1,7 +1,5 @@
 @import "../components/index";
 
-// Main styling
-
 header {
     .about {
         font-family: $heading;
@@ -10,7 +8,7 @@ header {
         left: 35px;
         top: -5px;
     }
-    // changes the button of the current page
+    /* changes the button of the current page */
     #about {
         font-family: $heading;
         position: relative;
@@ -25,7 +23,7 @@ body {
     height: 80vh;
     main {
         width: min(80vw, 600px);
-        // margin keeps the text in the middle while maintaining a nice fluid zoom
+        /* margin keeps the text in the middle while maintaining a nice fluid zoom */
         margin-inline: auto;
         margin-top: 120px;
         font-family: $text;
@@ -40,8 +38,8 @@ body {
         }
     }
 }
-//had to add a wrapper to make the box not a defined width
-//adding padding onto the wrapper to make it lower down and seperate from the paragraphs
+/* had to add a wrapper to make the box not a defined width
+adding padding onto the wrapper to make it lower down and seperate from the paragraphs */
 .resume-wrapper {
     display: flex;
     justify-content: center;
