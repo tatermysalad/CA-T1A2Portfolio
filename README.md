@@ -1,10 +1,10 @@
 # T1A2 - Project: Plan and Develop a Portfolio Website
 
+## Links
 
-### Links
- * [Portfolio website](https://edoughertyportfolio.netlify.app)
- * [GitHub repo](https://github.com/tatermysalad/T1A2Portfolio)
- * [Presentation](https://edoughertyportfolio.netlify.app)
+-   [Portfolio website](https://edoughertyportfolio.netlify.app)
+-   [GitHub repo](https://github.com/tatermysalad/T1A2Portfolio)
+-   [Presentation](https://youtube.com)
 
 ## Purpose
 
@@ -25,28 +25,43 @@ The following is a png file created on [draw.io](https://draw.io)
 
 ## Screenshots
 
-* The below is a few screenshots in multiple viewports
+### Below are screenshots of the Small/ Mobile viewport
 
-![Home Page Tablet View](./docs/Home.%20Medium%3ATablet%20view.jpg)
+![Home Page Small Home View](./docs/Small%20-%20Home.png)
+![Home Page Small Home Menu View](./docs/Small%20-%20Home%20Menu.png)
+![Home Page Small About View](./docs/Small%20-%20About.png)
+![Home Page Small About Menu View](./docs/Small%20-%20About%20Menu.png)
+![Home Page Small Blog View](./docs/Small%20-%20Blog.png)
+![Home Page Small Blog Menu View](./docs/Small%20-%20Blog%20Menu.png)
+![Home Page Small Contact View](./docs/Small%20-%20Contact.png)
+![Home Page Small Contact Menu View](./docs/Small%20-%20Contact%20Menu.png)
 
-![About Page Tablet View](./docs/About.%20Medium%3ATablet%20view.jpg)
+### Below are screenshots of the Medium/ Tablet viewport
 
-![Blog Page Desktop View](./docs/Blog.%20Large%3ADesktop%20view.jpg)
+![Home Page Medium Home View](./docs/Medium%20-%20Home.png)
+![Home Page Medium About View](./docs/Medium%20-%20About.png)
+![Home Page Medium Blog View](./docs/Medium%20-%20Blog.png)
+![Home Page Medium Contact View](./docs/Medium%20-%20Contact.png)
 
-![Contact Page Mobile View](./docs/Contact.%20Smalll%3AMobile%20view.jpg)
+### Below are screenshots of the Large/ Desktop viewport
+
+![Home Page Large Home View](./docs/Large%20-%20Home.png)
+![Home Page Large About View](./docs/Large%20-%20About.png)
+![Home Page Large Blog View](./docs/Large%20-%20Blog.png)
+![Home Page Large Contact View](./docs/Large%20-%20Contact.png)
 
 ## Target Audience
 
-The target audience of this portfolio is anyone who is interested in myself including those who are grading this as a project.
+The target audience of this portfolio is anyone who is interested in learning about myself, including my skills and what my interests are through my blog entries.
 
 ## Tech Stack
 
-* Sitemap created from [draw.io](https://draw.io)
-* Site plan created on [figma.com](https://www.figma.com/file/UKrFoOnXShVvHg3sVTMrJC/Portfolio-Website?node-id=14%3A395&t=FxBhUNpIrxp7jS8J-1)
-* Colour palette 'Rosettes and Cream' from [canva.com](https://www.canva.com/colors/color-palettes/rosettes-and-cream/)
-* Colour contrast checked on [webaim.org](https://webaim.org/resources/contrastchecker/)
-* HTML
-* CSS
-    * SCSS
-* Netlify
-* Written with Visual Studio Code
+-   Sitemap created from [draw.io](https://draw.io)
+-   Site plan created on [figma.com](https://www.figma.com/file/UKrFoOnXShVvHg3sVTMrJC/Portfolio-Website?node-id=14%3A395&t=FxBhUNpIrxp7jS8J-1)
+-   Colour palette 'Rosettes and Cream' from [canva.com](https://www.canva.com/colors/color-palettes/rosettes-and-cream/)
+-   Colour contrast checked on [webaim.org](https://webaim.org/resources/contrastchecker/)
+-   HTML
+-   CSS
+    -   SCSS
+-   Netlify
+-   Written with Visual Studio Code
