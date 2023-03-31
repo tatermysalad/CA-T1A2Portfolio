@@ -43,7 +43,7 @@ This is a portfolio website for displaying myself as a developer and IT professi
             }
 ```
 
--   Home page words 'Ed', 'simplicity','design' and 'function' change with mouse hover (not as noticable on phones with no mouse though)
+-   Home page words 'Ed', 'simplicity','design' and 'function' change with mouse hover (not as noticable on mobile)
 
 ```scss
 .about-me-sub {
