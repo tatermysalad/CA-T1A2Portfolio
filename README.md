@@ -62,7 +62,7 @@ This is a portfolio website for displaying myself as a developer and IT professi
 ### Small/ mobile views:
 
 -   'Hamburger' menu
-    -   Menu slides in from the right of the screen checkbox which triggers
+    -   Checkbox triggers nav bar/menu to slide in from the right of screen:
     ```scss
      {
         transform: translateX(-100vw);
@@ -75,7 +75,7 @@ This is a portfolio website for displaying myself as a developer and IT professi
 -   Always visible header
 -   The social media elements are based on the footer
     -   To the left for medium
-    -   Centre for large/desktop.
+    -   Centred for large/desktop.
 
 ## Sitemap
 
