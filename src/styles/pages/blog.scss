@@ -1,6 +1,6 @@
 @import "../components/index";
 
-// Main styling
+/* Main styling */
 body {
     display: flex;
     flex-direction: column;
@@ -35,10 +35,13 @@ body {
     main {
         animation: fade-up 0.5s;
         .blog-parent {
+            /* grid styling for blog articles
+            1 fraction ensures that it is evenly spaced*/
             display: grid;
             gap: 1.5rem;
             grid-auto-columns: 1fr;
             grid-template-areas:
+            /* 5 row x 1 column grid */
                 "one"
                 "two"
                 "three"
@@ -46,6 +49,7 @@ body {
                 "five";
             @media screen and (min-width: $medium) {
                 grid-template-areas:
+        /* 4 row x 2 column grid */
                     "two two"
                     "one three"
                     "four three"
@@ -53,6 +57,8 @@ body {
             }
             @media screen and (min-width: $large) {
                 grid-template-areas:
+        /*  2 row x 4 column grid */
+
                     "two two one three"
                     "five four four three";
             }
@@ -83,7 +89,7 @@ body {
                     margin: 0 0.1vw;
                     text-align: right;
                 }
-
+                /* assigns the numbering to the blog articles */
                 &:nth-child(1) {
                     grid-area: one;
                 }
@@ -106,6 +112,7 @@ body {
 footer {
     display: flex;
     .to-the-top {
+        /* styling for the button */
         margin-bottom: 15px;
         background-color: black;
         color: white;
@@ -114,6 +121,7 @@ footer {
         text-align: center;
         border-radius: 5px;
         margin-top: 15px;
+        /* below removes the to the top button for medium and larger displays */
         @media screen and (min-width: $medium) {
             display: none;
         }

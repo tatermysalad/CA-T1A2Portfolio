@@ -5,6 +5,7 @@ header {
         color: black;
     }
     &:hover > #title {
+        /* underlines the navigation links on hover */
         text-decoration: underline;
     }
     img {

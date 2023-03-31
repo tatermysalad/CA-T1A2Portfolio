@@ -5,9 +5,10 @@ footer .social-media {
 
 @media screen and (min-width: $medium) {
     footer {
+        /* maintaining social icons positioning for a range of tablet sizes */
         position: fixed;
-        bottom: min(1vw,2px);
-        left: min(1vw,2px);
+        bottom: min(1vw, 2px);
+        left: min(1vw, 2px);
         .social-media {
             display: flex;
             flex-direction: column;

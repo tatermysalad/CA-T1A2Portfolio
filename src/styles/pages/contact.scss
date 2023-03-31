@@ -1,23 +1,13 @@
 @import "../components/index";
 
-@keyframes fade-up {
-    0% {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-// Main styling
+/* Main styling */
 body {
     font-family: $text;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     header {
-        // Changes the font in the menu overlay for the current page
+        /* Changes the font in the menu overlay for the current page */
         #contact {
             font-family: $heading;
             position: relative;
