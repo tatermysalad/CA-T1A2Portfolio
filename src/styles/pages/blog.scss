@@ -18,7 +18,7 @@ body {
         width: min(80vw, 2000px);
     }
     header {
-        // Changes the font in the menu overlay for the current page
+        /* Changes the font in the menu overlay for the current page */
         #blog {
             font-family: $heading;
             position: relative;
@@ -69,7 +69,7 @@ body {
                     float: left;
                     margin: 5px;
                 }
-                // nth-child to make some variability of the images
+                /* nth-child to make some variability of the images */
                 &:nth-child(2n) > img {
                     float: right;
                 }

@@ -12,11 +12,70 @@ This is a portfolio website for displaying myself as a developer and IT professi
 
 ## Functionality/ features
 
-The main functionality of the site is to showcase myself as a future developer. The site features scalable elements for many types of screen sizes.
+### Every viewport:
 
-The small/mobile view features a 'hamburger' menu, with menu overlay which slides in from the right of the screen. This was made with a HTML checkbox and styled with CSS.
+-   Scalable elements using clamp, min/max, vw/vh, percentages, and rem values for text.
+-   Animations on each page for fluid look and feel
+-   Blog features grid which resizes on viewport
 
-The medium/tablet view (and larger) feature scalable elements with a menu header which lets the user know which page they are on. The social media elements are based on the footer - to the left for medium, and at the bottom centre for large/desktop.
+```scss
+.blog-parent {
+            display: grid;
+            gap: 1.5rem;
+            grid-auto-columns: 1fr;
+            grid-template-areas:
+                "one"
+                "two"
+                "three"
+                "four"
+                "five";
+            @media screen and (min-width: $medium) {
+                grid-template-areas:
+                    "two two"
+                    "one three"
+                    "four three"
+                    "five five";
+            }
+            @media screen and (min-width: $large) {
+                grid-template-areas:
+                    "two two one three"
+                    "five four four three";
+            }
+```
+
+-   Home page words 'Ed', 'simplicity','design' and 'function' change with mouse hover (not as noticable on phones with no mouse though)
+
+```scss
+.about-me-sub {
+    /* Changes the headings for specific words to show user they are links */
+    font-family: $heading;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    &:hover {
+        text-shadow: 2px 2px black;
+        color: white;
+    }
+}
+```
+
+### Small/ mobile views:
+
+-   'Hamburger' menu
+    -   Menu slides in from the right of the screen checkbox which triggers
+    ```scss
+     {
+        transform: translateX(-100vw);
+    }
+    ```
+    -   Font and heading changes for each page to let user know which page they are on.
+
+### Medium/ tablet view and Large/ Desktop view
+
+-   Always visible header
+-   The social media elements are based on the footer
+    -   To the left for medium
+    -   Centre for large/desktop.
 
 ## Sitemap
 
