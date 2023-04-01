@@ -25,6 +25,7 @@ header .home-button {
   color: black;
 }
 header:hover > #title {
+  /* underlines the navigation links on hover */
   text-decoration: underline;
 }
 header img {
@@ -323,6 +324,7 @@ footer .social-media {
 
 @media screen and (min-width: 760px) {
   footer {
+    /* maintaining social icons positioning for a range of tablet sizes */
     position: fixed;
     bottom: min(1vw, 2px);
     left: min(1vw, 2px);
@@ -356,6 +358,7 @@ footer .social-media {
     width: 20px;
   }
 }
+/* Main styling */
 body {
   display: flex;
   flex-direction: column;
@@ -377,6 +380,9 @@ body {
     width: min(80vw, 2000px);
   }
 }
+body header {
+  /* Changes the font in the menu overlay for the current page */
+}
 body header #blog {
   font-family: "Abril Fatface", cursive;
   position: relative;
@@ -393,6 +399,8 @@ body main {
   animation: fade-up 0.5s;
 }
 body main .blog-parent {
+  /* grid styling for blog articles
+  1 fraction ensures that it is evenly spaced*/
   display: grid;
   gap: 1.5rem;
   grid-auto-columns: 1fr;
@@ -415,6 +423,8 @@ body main .blog-parent .blog-child {
   overflow: hidden;
   text-decoration: none;
   color: black;
+  /* nth-child to make some variability of the images */
+  /* assigns the numbering to the blog articles */
 }
 body main .blog-parent .blog-child img {
   width: 40%;
@@ -455,6 +465,7 @@ footer {
   display: flex;
 }
 footer .to-the-top {
+  /* styling for the button */
   margin-bottom: 15px;
   background-color: black;
   color: white;
@@ -463,6 +474,7 @@ footer .to-the-top {
   text-align: center;
   border-radius: 5px;
   margin-top: 15px;
+  /* below removes the to the top button for medium and larger displays */
 }
 @media screen and (min-width: 760px) {
   footer .to-the-top {

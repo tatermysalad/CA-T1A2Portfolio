@@ -25,6 +25,7 @@ header .home-button {
   color: black;
 }
 header:hover > #title {
+  /* underlines the navigation links on hover */
   text-decoration: underline;
 }
 header img {
@@ -323,6 +324,7 @@ footer .social-media {
 
 @media screen and (min-width: 760px) {
   footer {
+    /* maintaining social icons positioning for a range of tablet sizes */
     position: fixed;
     bottom: min(1vw, 2px);
     left: min(1vw, 2px);
@@ -358,6 +360,7 @@ footer .social-media {
 }
 /* mobile styling */
 body {
+  /* flex styling for body */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
