@@ -4,7 +4,7 @@
 
 -   [Portfolio website](https://edoughertyportfolio.netlify.app)
 -   [GitHub repo](https://github.com/tatermysalad/T1A2Portfolio)
--   [Presentation](https://youtube.com)
+-   [Presentation video](https://youtu.be/bQNnHDc86gg)
 
 ## Purpose
 
@@ -124,3 +124,5 @@ The target audience of this portfolio is anyone who is interested in learning ab
     -   SCSS
 -   Netlify
 -   Written with Visual Studio Code
+-   Presentation created and recorded with [Canva.com](https://www.canva.com/)
+-   Presentation hosted on [youtube](https://www.youtube.com)
